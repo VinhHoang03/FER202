@@ -1,11 +1,9 @@
 import { Card, Button } from 'react-bootstrap';
 //Khai báo 1 đối tượng student gồm name, age, avatar, grade
 //In thông tin của h1, p và img
-function Student() {
-    const student = {id: 1, name: 'Lê Minh Hô', age: 20, avatar: 'image.png', grade: 'A'};
-    console.log(student);
+function Student({ student }) {
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
+        <div>
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={student.avatar} />
                 <Card.Body>
