@@ -1,0 +1,26 @@
+.home-container {
+  height: calc(100vh - 60px); /* trừ chiều cao NavBar */
+  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4); /* lớp phủ tối nhẹ */
+}
+
+.home-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75); /* chữ mờ mờ */
+  backdrop-filter: blur(3px); /* hiệu ứng kính mờ */
+  padding: 20px 40px;
+  border-radius: 12px;
+  letter-spacing: 2px;
+}
